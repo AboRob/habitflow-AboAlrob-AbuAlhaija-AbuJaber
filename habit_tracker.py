@@ -54,3 +54,42 @@ class HabitTracker:
 
         raise ValueError("Habit not found")
 
+    def calculate_streak(self, habit):
+
+        logs_set = set(habit["logs"])
+
+        streak = 0
+        current = date.today()
+
+        while current.strftime("%Y-%m-%d") in logs_set:
+            streak += 1
+            current -= timedelta(days=1)
+
+        return streak
+
+    def get_all_stats(self, habits):
+
+        today = date.today()
+        results = []
+
+        for habit in habits:
+
+            logs_set = set(habit["logs"])
+
+            last_30 = [
+                (today - timedelta(days=i)).strftime("%Y-%m-%d")
+                for i in range(30)
+            ]
+
+            completed_30 = sum(1 for d in last_30 if d in logs_set)
+
+            rate = round(completed_30 / 30 * 100, 1)
+
+            results.append({
+                "name": habit["name"],
+                "total_logs": len(habit["logs"]),
+                "current_streak": self.calculate_streak(habit),
+                "completion_rate": rate
+            })
+
+        return results
