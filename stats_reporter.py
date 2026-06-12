@@ -10,3 +10,6 @@ class StatsReporter:
 
         for s in stats:
             print(f"  {s['name']:<15} {s['current_streak']:>7}d {s['completion_rate']:>10}% {s['total_logs']:>12}")
+def best_habit(self, stats):
+
+        return max(stats, key=lambda s: s["completion_rate"])
