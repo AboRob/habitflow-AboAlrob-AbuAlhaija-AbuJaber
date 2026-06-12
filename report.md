@@ -15,8 +15,7 @@
 * Omar Fawzy Omar AbuJaber — 202210217
 
 **GitHub Repository:**
-https://github.com/AboRob/habitflow-AboAlhaija-AbuJaber
-
+https://github.com/AboRob/habitflow-AboAlrob-AbuAlhaija-AbuJaber
 ---
 
 ## 2. Project Description
