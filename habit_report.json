@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Exercise",
+    "total_logs": 20,
+    "current_streak": 0,
+    "completion_rate": 43.3
+  },
+  {
+    "name": "Reading",
+    "total_logs": 25,
+    "current_streak": 0,
+    "completion_rate": 56.7
+  },
+  {
+    "name": "Meditation",
+    "total_logs": 16,
+    "current_streak": 0,
+    "completion_rate": 36.7
+  },
+  {
+    "name": "Study",
+    "total_logs": 20,
+    "current_streak": 0,
+    "completion_rate": 36.7
+  }
+]
